@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница - Нотный редактор</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="btn-gradient">Редактор</a>
+            <ul class="nav-menu">
+                <li><a href="#features" class="tile">Возможности</a></li>
+                <li><a href="#howitworks" class="tile">Принцип</a></li>
+                <li><a href="#contact" class="tile">Связь</a></li>
+                <li><a href="#" class="tile">Узнать больше</a></li>
+            </ul>
+        </div>
+        <button class="btn-profile"><img src="i/icons/Icon_light_User.svg" alt="U" class="profile-icon"></button>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="header-left">
+                <div class="header-logo">
+                    <img src="i/logo.svg" alt="logo">
+                    <img src="i/Welcome.svg" alt="welcome">
+                </div>
+                <div style="padding: 3.2vw 0;">
+                    <h1>web</h1>
+                    <h1>score</h1>
+                </div>
+                <p>Онлайн-редактор партитур для музыкантов и композиторов</p>
+            </div>
+            <div class="header-right">
+                <img src="i/Soundwave.svg" alt="abstract background">
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="features-around"><img src="i/Soundwave.svg" alt="abstract background"></div>
+        <div class="features-container">
+            <h2>Что предлагает наш сайт?</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-img">
+                        <img src="i/score.svg" alt="Создание партитур">
+                    </div>
+                    <p>👉Создание партитур</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-img">
+                        <img src="i/score.svg" alt="Работа с MIDI">
+                    </div>
+                    <p>👉Работа с MIDI</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-img">
+                        <img src="i/score.svg" alt="Экспорт файлов">
+                    </div>
+                    <p>👉Экспорт в PDF/MIDI/MP3</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-img">
+                        <img src="i/score.svg" alt="Удобный интерфейс">
+                    </div>
+                    <p>👉Удобный интерфейс</p>
+                </div>
+            </div>
+        </div>
+        <div class="features-around"><img src="i/Soundwave.svg" alt="abstract background" style="left: 0;"></div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="howitworks">
+        <div class="howitworks-container">
+            <div class="howitworks-left">
+                <h1>Онлайн-редактор партитур для музыкантов и композиторов</h1>
+                <p>Создавайте, редактируйте и сохраняйте свои музыкальные шедевры онлайн!</p>
+            </div>
+            <div class="howitworks-right">
+                <h2>Как это работает?</h2>
+                <div class="steps">
+                    <div class="btn-step">
+                        <span>1</span>
+                        <p>Выберите инструмент</p>
+                    </div>
+                    <div class="btn-step">
+                        <span>2</span>
+                        <p>Запишите ноты</p>
+                    </div>
+                    <div class="btn-step">
+                        <span>3</span>
+                        <p>Сохраните или экспортируйте партитуру</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <div class="feedback-form-container">
+                <div class="feedback-heading">
+                    <h2>Свяжитесь с нами</h2>
+                </div>
+                <div class="feedback-border-container">
+                    <form id="feedbackForm" method="POST" action="submit.php">
+                        <input type="text" id="name" name="name" placeholder="Ваше Имя">
+                        <span class="error" id="nameError"></span>
+
+                        <input type="email" id="email" name="email" placeholder="Ваш Email">
+                        <span class="error" id="emailError"></span>
+
+                        <textarea id="message" name="message" rows="4" placeholder="Сообщение"></textarea>
+                        <span class="error" id="messageError"></span>
+
+                        <button class="btn" type="submit">Отправить</button>
+                    </form>
+                    <div class="contacts">
+                        <p>Контакты</p>
+                        <ul>
+                            <li><a href="mailto:admin@inbox">admin@inbox.com</a></li>
+                            <li><a href="tel:">+X (XXX) XXX XX XX</a></li>
+                            <li><a href="tel:">+Y (YYYY)-YY-YY-YY<a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-background-container">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <linearGradient id="Soundwave" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="rgb(217, 93, 176)" />
+                                    <stop offset="100%" stop-color="rgb(51, 68, 220)" />
+                                </linearGradient>
+                            </defs>
+
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -3799.000000)" fill="url(#Soundwave)">
+                                    <g id="icons" transform="translate(56.000000, 160.000000)">
+                                        <path d="M263.999786,3641.05125 L263.999786,3650.60392 C263.999786,3652.8603 262.302786,3654.83873 260.103786,3654.89616 C257.683786,3654.95873 255.733786,3652.8162 256.029786,3650.287 C256.233786,3648.54036 257.568786,3647.07167 259.257786,3646.7609 C260.262786,3646.57527 261.215786,3646.77629 261.999786,3647.2409 L261.999786,3642.07688 C261.999786,3641.51073 261.551786,3641.05125 260.999786,3641.05125 L252.999786,3641.05125 C252.447786,3641.05125 251.999786,3641.51073 251.999786,3642.07688 L251.999786,3654.70642 C251.999786,3656.9628 250.302786,3658.94123 248.103786,3658.99866 C245.683786,3659.06123 243.733786,3656.9187 244.029786,3654.3895 C244.233786,3652.64286 245.568786,3651.17417 247.257786,3650.86341 C248.262786,3650.67777 249.215786,3650.87879 249.999786,3651.3434 L249.999786,3641.05125 C249.999786,3639.91793 250.895786,3639 251.999786,3639 L261.999786,3639 C263.104786,3639 263.999786,3639.91793 263.999786,3641.05125">
+
+                                        </path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="footer-navigation">
+                        <a href="#">Ссылка 1</a>
+                        <a href="#">Ссылка 2</a>
+                        <a href="#">Ссылка 3</a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="https://vk.com/" class="btn-footer-link"><img src="i/icons/vk.svg" class="footer-link-icon"></a>
+                        <a href="https://www.facebook.com/" class="btn-footer-link"><img src="i/icons/facebook.svg" class="footer-link-icon"></a>
+                        <a href="https://www.instagram.com/" class="btn-footer-link"><img src="i/icons/instagram.svg" class="footer-link-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2024 Web Score. Все права защищены.</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
